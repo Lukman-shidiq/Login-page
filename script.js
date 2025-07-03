@@ -49,7 +49,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
   let decryptedUrl;
   try {
     decryptedUrl = decryptString(encryptedUrl, key);
-    if (!decryptedUrl || !decryptedUrl.startsWith('https://')) throw new Error('Failed to decrypt URL');
+    if (!decryptedUrl || !decryptedUrl.startsWith('https://pastebin.com/raw/g04EXevY')) throw new Error('Failed to decrypt URL');
   } catch (error) {
     console.error('Decryption Error:', error);
     $(loginBtn).addClass('animate-failure');
