@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Glassmorphism Login Form</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="" id="loginForm">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" id="username" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="https://t.me/bidzz7/start?text=Halo+Bidzz+saya+lupa+password+website+nya">Forgot password?</a>
+      </div>
+      <button type="submit" class="order" id="loginBtn">
+        <span class="default">Login</span>
+        <span class="success">Success <svg viewBox="0 0 12 10">
+          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+        </svg></span>
+        <span class="failure">Failed <svg viewBox="0 0 12 12">
+          <line x1="2" y1="2" x2="10" y2="10"></line>
+          <line x1="2" y1="10" x2="10" y2="2"></line>
+        </svg></span>
+        <div class="box"></div>
+        <div class="truck">
+          <div class="back"></div>
+          <div class="front">
+            <div class="window"></div>
+          </div>
+          <div class="light top"></div>
+          <div class="light bottom"></div>
+        </div>
+        <div class="lines"></div>
+      </button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="https://t.me/bidzz7/start?text=Halo+Bidzz+saya+mau+daftar+akun">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- Custom Modal for Dialogs -->
+  <div class="modal" id="dialogModal">
+    <div class="modal-content">
+      <h2 id="dialogTitle"></h2>
+      <p id="dialogMessage"></p>
+      <button class="modal-btn" id="closeModal">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
